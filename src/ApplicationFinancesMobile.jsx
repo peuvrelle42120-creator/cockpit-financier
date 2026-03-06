@@ -79,8 +79,8 @@ export default function ApplicationFinancesMobile() {
   const [fuelBudget, setFuelBudget] = useState(() => Number(localStorage.getItem("finances-mobile-budget-fuel")) || 250);
   const [funBudget, setFunBudget] = useState(() => Number(localStorage.getItem("finances-mobile-budget-fun")) || 150);
   const [activeTab, setActiveTab] = useState("tableau");
-  const [isFoldMode, setIsFoldMode] = useState(False);
-  const [offlineReady, setOfflineReady] = useState(False);
+  const [isFoldMode, setIsFoldMode] = useState(false);
+  const [offlineReady, setOfflineReady] = useState(false);
   const [installPrompt, setInstallPrompt] = useState(null);
   const [form, setForm] = useState({ date: "2026-03-06", type: "Dépense", nature: "Nécessaire", categorie: "Nourriture", description: "", montant: "" });
   const [batchRows, setBatchRows] = useState([{ id: 1, montant: "", categorie: "Nourriture", nature: "Nécessaire", description: "" }, { id: 2, montant: "", categorie: "Carburant", nature: "Nécessaire", description: "" }]);
